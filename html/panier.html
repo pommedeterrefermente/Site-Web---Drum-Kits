@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Cart</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Plateforme incroyable de e-commerce">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="../css/panier.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <main class="limitedWidthBlockContainer">
+      <div class="limitedWidthBlock" id="limitedWidthBlock">
+        <div class="cartAndFormContainer" id="cartAndFormContainer">
+          <h1>Panier</h1>
+          <div class="cards">
+            <div class="card">
+                <img src="image/New-York.jpg" style="width: 100px; border-radius: 10px;" alt="new york">
+                <div class="card-header">
+                    <div>
+                        <h4 class="title">drum kit vol.1</h4>
+                        <h4 class="price">20€</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!--Ajout d'une <div>, afin d'intégrer le nombre de produits.-->
+          <div id="numberProducts"></div>
+          <section class="cart">
+            <section id="cart__items">
+             
+            </section>
+            <div class="cart__price">
+              <p>Total (<span id="totalQuantity"><!-- 2 --></span>) : <span id="totalPrice"><!-- 84,00 --></span> €</p>
+            </div>
+                  <div class="cart__order__form__question">
+                  <label for="email">Quel est votre e-mail ?: </label>
+                  <input type="email" name="email" id="email" required>
+                  <p id="emailErrorMsg"></p>
+                  <div class="cart__order__form__submit">
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="limitedWidthBlockContainer footerMain">
+        <div class="limitedWidthBlock">
+          <div>
+            <p>c'est sur ce mail que vous  serai envoyer <br>
+            votre drum kit et que vous utiliserez <br>
+            pour retélécharger votre drum kit <br>
+            si vous le perdez</p>
+          </div>
+          <div class="cart__order__form__submit">
+            <input type="submit" value="Payer par carte" id="order">
+          </div>
+          <div class="cart__order__form__submit">
+            <input type="submit" value="Payer avec paypal" id="order">
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+  <script src="../js/cart.js"></script>
+  </body>
+</html>

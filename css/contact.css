@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(40, 37, 37);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'DynaPuff', cursive;
+} 
+form{
+    background-color: rgb(27, 25, 25);
+    padding: 80px 300px 100px;
+    border-radius: 10px;
+}
+form h1{
+    font-size: 20px;
+}
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+form .corps-formulaire .groupe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input{
+    margin-top: 5px; 
+    padding: 10px 5px 10px 30px;
+    /*border: 0,5px solid color rgb(209, 209, 209);*/
+    outline-color: rgb(60, 135, 164);
+    border-radius: 5px;
+    background-color: rgb(27, 25, 25); 
+    width: 100%;
+    padding: 10px 44px;
+   
+}
+form .corps-formulaire .gauche .groupe textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(27, 25, 25);
+    border-radius: 5px; 
+    outline: none;
+    resize: none;
+    height: 72%;
+    width: 100%;
+    padding: 10px 44px;
+}
+form .pied-formulaire button{
+    margin-top: 30px;
+    background-color: rgb(30, 90, 126);
+    border: none;
+    border-radius: 2px;
+    color: rgb(27, 25, 25);
+    font-size: 15px;
+    padding: 10px 150px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied-formulaire button:hover{
+    transform: scale(1.01)
+}
+
+@media screen and (max-width:920px){
+    
+}
